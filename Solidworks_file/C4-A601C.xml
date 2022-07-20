@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="07/06/22||21:44:30" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="C4-A601C" uid="C4-A601C" version="232">
+<AssemblyFile name="C4-A601C.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="End-Effector-1" uid="End-Effector-1" entityUid="End-Effector*:*Default">
+<Transform>
+<Rotation>-0.95994509145330631 0.12570922684766161 -0.25040489547943451 0.074156671565012044 0.97582220490395766 0.20560110038318699 0.27019661259368577 0.17879657351789927 -0.9460579135767303</Rotation>
+<Translation>-0.4372728015518933 0.57125500720127476 0.13239972923976215</Translation>
+</Transform>
+</Instance>
+<Instance name="J1 C4-1" uid="J1 C4-1" entityUid="J1 C4*:*Default">
+<Transform>
+<Rotation>0.95688757254684131 0 0.29045855729417508 0 1 0 -0.29045855729417508 0 0.95688757254684131</Rotation>
+<Translation>0 0.19800000000000001 0</Translation>
+</Transform>
+</Instance>
+<Instance name="J6 C4-1" uid="J6 C4-1" entityUid="J6 C4*:*Default">
+<Transform>
+<Rotation>0.95994509145330664 0.037114816255669134 0.27771912395261983 -0.074156671565011878 0.98949643003905574 0.12408707830537187 -0.2701966125936846 -0.13971150759430107 0.95261455226582914</Rotation>
+<Translation>-0.43055318591172043 0.57073591050031924 0.13050835295160668</Translation>
+</Transform>
+</Instance>
+<Instance name="J4 C4-1" uid="J4 C4-1" entityUid="J4 C4*:*Default">
+<Transform>
+<Rotation>0.95688757254684143 -0.076607332517840909 0.28017403539570612 0 0.96459211946008339 0.26374617167933345 -0.29045855729417491 -0.25237543398675988 0.92300621168797203</Rotation>
+<Translation>-0.37487637060742829 0.56643482354954888 0.11483694942117274</Translation>
+</Transform>
+</Instance>
+<Instance name="J3 C4-1" uid="J3 C4-1" entityUid="J3 C4*:*Default">
+<Transform>
+<Rotation>0.95688757254684131 0 0.29045855729417519 0 1 0 -0.29045855729417519 0 0.95688757254684131</Rotation>
+<Translation>-0.13565447747071779 0.56643482354954888 0.042222310097629071</Translation>
+</Transform>
+</Instance>
+<Instance name="J5 C4-1" uid="J5 C4-1" entityUid="J5 C4*:*Default">
+<Transform>
+<Rotation>0.95994509145330653 -0.0028162536796971891 0.28017403539570623 -0.074156671565012156 0.96173735759140333 0.26374617167933301 -0.27019661259368477 -0.27395861681706035 0.92300621168797192</Rotation>
+<Translation>-0.37487637060742829 0.56643482354954899 0.11483694942117281</Translation>
+</Transform>
+</Instance>
+<Instance name="C4C-1" uid="C4C-1" grounded="true" entityUid="C4C*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="J2 C4-1" uid="J2 C4-1" entityUid="J2 C4*:*Default">
+<Transform>
+<Rotation>0.94324168038933986 -0.16102471509331018 0.29045855729417402 0.16827965971459807 0.98573929419818673 -7.0681850129761248e-16 -0.28631641326098245 0.048878267182657344 0.95688757254684165</Rotation>
+<Translation>-0.095398298697390027 0.32000000000000056 0.030002743301963921</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>C4C-1</Uid>
+</InstancePath>
+<Position>0 0.20000000000000001 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J1 C4-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>C4C-1</Uid>
+</InstancePath>
+<Position>0 0.20000000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J1 C4-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J1 C4-1</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.122 0.063</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J2 C4-1</Uid>
+</InstancePath>
+<Position>0 0 0.062000000000000013</Position>
+<Axis>1.1102230246251565e-16 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>J1 C4-1</Uid>
+</InstancePath>
+<Position>-0.10000000000000002 0.122 0.061000000000000006</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J2 C4-1</Uid>
+</InstancePath>
+<Position>0 0 0.062000000000000013</Position>
+<Axis>-1.1102230246251565e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J2 C4-1</Uid>
+</InstancePath>
+<Position>0 0.25000000000000006 0.072000000000000008</Position>
+<Axis>-1.1102230246251565e-16 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J3 C4-1</Uid>
+</InstancePath>
+<Position>0 0 0.072000000000000008</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>J2 C4-1</Uid>
+</InstancePath>
+<Position>0 0.25000000000000006 0.070000000000000007</Position>
+<Axis>1.1102230246251565e-16 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J3 C4-1</Uid>
+</InstancePath>
+<Position>0 0 0.072000000000000008</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J3 C4-1</Uid>
+</InstancePath>
+<Position>-0.060999999999999999 0.026750000000000052 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J4 C4-1</Uid>
+</InstancePath>
+<Position>0.18899999999999997 0.028870000000000173 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J3 C4-1</Uid>
+</InstancePath>
+<Position>-0.062 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J4 C4-1</Uid>
+</InstancePath>
+<Position>0.189 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J4 C4-1</Uid>
+</InstancePath>
+<Position>0 0.015000000000000124 0.019500000000000017</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J5 C4-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 0.01949999999999999</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>J4 C4-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 0.019500000000000017</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J5 C4-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 0.01949999999999999</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>J5 C4-1</Uid>
+</InstancePath>
+<Position>-0.031000000000000083 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>J6 C4-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J5 C4-1</Uid>
+</InstancePath>
+<Position>-0.060000000000000053 0.0065000000000000613 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J6 C4-1</Uid>
+</InstancePath>
+<Position>-0.0020000000000000573 0.0060000000000000053 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>J6 C4-1</Uid>
+</InstancePath>
+<Position>-0.0070000000000000062 0.029499999999999971 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>End-Effector-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>J6 C4-1</Uid>
+</InstancePath>
+<Position>-0.0070000000000000062 1.1102230246251565e-16 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>End-Effector-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="C4C" uid="C4C*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="C4C.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.8467423185341181</Mass>
+<CenterOfMass>0.036160668326465792 0.088936737688841694 0.00014226598350663524</CenterOfMass>
+<Inertia>0.026547289721438161 0.034815580821012007 0.042322748565448945 -6.1616879794638746e-06 -0.00011436897767375517 0.0021982933552304076</Inertia>
+</MassProperties>
+<GeometryFile name="C4C_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="End-Effector" uid="End-Effector*:*Default" version="244">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="End-Effector.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.15988049259450635</Mass>
+<CenterOfMass>0.12545435156032012 -0.0091892929799800745 0.002015071533930113</CenterOfMass>
+<Inertia>7.9742301620634146e-05 0.0013571236547338672 0.0013652839121105153 1.2638180391163604e-05 -1.7137008624988116e-05 0.00015632582384389763</Inertia>
+</MassProperties>
+<GeometryFile name="End-Effector_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J1 C4" uid="J1 C4*:*Default" version="124">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J1 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.0816613109410529</Mass>
+<CenterOfMass>-0.026387012279834726 0.068291069590000877 -0.000105526188430291</CenterOfMass>
+<Inertia>0.016927568903987014 0.020796481588151061 0.014592538392856548 3.9394199301760157e-05 -3.2649900923892535e-05 0.0040173959164184229</Inertia>
+</MassProperties>
+<GeometryFile name="J1 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J2 C4" uid="J2 C4*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J2 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.5032673232316363</Mass>
+<CenterOfMass>5.4509739896726784e-06 0.086490665670976838 -0.00054083349041944128</CenterOfMass>
+<Inertia>0.038732236499156594 0.01457645751342033 0.029570353212528731 0.00049615813033001297 -9.4092861152448459e-07 -2.3794682503429182e-08</Inertia>
+</MassProperties>
+<GeometryFile name="J2 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J3 C4" uid="J3 C4*:*Default" version="108">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J3 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.0655112865196199</Mass>
+<CenterOfMass>0.0096961423733814174 -0.0060265273732103136 0.0011365109540686679</CenterOfMass>
+<Inertia>0.0048859649126600218 0.0056112566269959146 0.0055217555876552011 -8.9736351913121886e-06 2.6913108524077296e-05 9.7739031981495679e-05</Inertia>
+</MassProperties>
+<GeometryFile name="J3 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J4 C4" uid="J4 C4*:*Default" version="128">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J4 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.4712628754654293</Mass>
+<CenterOfMass>0.10579782486996675 0.00033261593234122004 -4.5121364578364951e-05</CenterOfMass>
+<Inertia>0.0023930258004239754 0.0060273360886824333 0.0055067425643039007 9.546424208107596e-08 -7.0266772507748152e-06 -6.9527646124992946e-05</Inertia>
+</MassProperties>
+<GeometryFile name="J4 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J5 C4" uid="J5 C4*:*Default" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J5 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.16514740309900761</Mass>
+<CenterOfMass>-0.022019754464661714 -4.1367325676042048e-05 0.00036516467672050972</CenterOfMass>
+<Inertia>6.1244701543512503e-05 0.00013178275792115996 0.00014637886749905936 2.7577281035368578e-08 -1.2477188912608878e-06 6.8002847899276792e-08</Inertia>
+</MassProperties>
+<GeometryFile name="J5 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="J6 C4" uid="J6 C4*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="J6 C4.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.010346733691852265</Mass>
+<CenterOfMass>-0.0046827711497831491 0.0001126853196605485 5.5753002356425594e-05</CenterOfMass>
+<Inertia>4.25207727453483e-06 2.1508933005959324e-06 2.1495148912278585e-06 -3.7174483567735857e-09 -5.919012986249027e-10 -1.8512684608998816e-10</Inertia>
+</MassProperties>
+<GeometryFile name="J6 C4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
