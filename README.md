@@ -5,3 +5,6 @@
 ## Simulink diagram for the robot arm simulation
 <img width="853" alt="simulink" src="https://user-images.githubusercontent.com/52157447/179899719-7ffecd69-d18d-45f1-8ddd-183fe2adeea9.PNG">
 <img width="1041" alt="simulink1" src="https://user-images.githubusercontent.com/52157447/179899725-db633f56-f661-4912-acf4-313a3215a5b9.PNG">
+
+## GUI + Robot simulation
+<img width="1005" alt="robot+GUI" src="https://user-images.githubusercontent.com/52157447/179902167-5541e25a-44fc-4159-b294-514fe1df42bd.PNG">
